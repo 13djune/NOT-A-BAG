@@ -10,6 +10,8 @@
   <title>FUTURE</title>
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap"
     rel="stylesheet">
@@ -49,10 +51,10 @@
   </header>
   <section id="prox">
     <div>
-      <h1>COMING SOON</h1>
+      <h1 data-aos="zoom-in">COMING SOON</h1>
 
-      <p>STAY TUNED</p>
-      <p id="demo"></p>
+      <p data-aos="zoom-in"  data-aos-delay="200">STAY TUNED</p>
+      <p data-aos="zoom-in"  data-aos-delay="300" id="demo"></p>
 
       <script>
         // Set the date we're counting down to
@@ -142,5 +144,7 @@
 </footer>
 
 </body>
-
+<script>
+  AOS.init();
+</script>
 </html>
