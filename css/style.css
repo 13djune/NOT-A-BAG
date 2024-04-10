@@ -390,6 +390,21 @@ footer>div {
 }
 
 /* ///////////////// */
+/*PROX*/
+#prox{
+  height: 100vh;
+  margin: 0;
+
+}
+#prox>div{
+  display: flex;
+}
+#prox>div>h1{
+  font-family: var(--tipoTitulos);
+}
+#prox>div>p{
+  font-family: var(--tipoGeneral);
+}
 
 
 
