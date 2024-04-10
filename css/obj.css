@@ -112,7 +112,7 @@ header {
   margin: 0;
   text-align: center;
   display: flex;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .menu-listing li {
@@ -138,6 +138,7 @@ header {
   color: #ffffff;
   transition: 0.5s;
 }
+
 .menu-prod li a:hover {
   color: var(--colorFondo);
   transition: 0.5s;
@@ -166,13 +167,16 @@ header {
 
   font-size: larger;
 }
-li > #objects {
+
+li>#objects {
   margin-left: 25em;
 }
+
 /* Mostrar el contenedor al hacer hover */
 .menu-listing li:hover .info {
   display: block;
 }
+
 /* SECTIONS */
 section {
   width: 90%;
@@ -199,9 +203,10 @@ section>p {
 /* ///////////////////////////// */
 
 /* PRODUCTOS */
-#productos>div{
+#productos>div {
   display: flex;
 }
+
 /* ///////////////////////////// */
 /* FOOTER */
 footer {
@@ -233,15 +238,18 @@ footer>div {
   font-size: small;
   padding: 0.5em 0em;
 }
+
 #footer_izq>div>a {
   font-family: var(--tipoGeneral);
   font-size: small;
   padding: 0.5em 0em;
   text-decoration: none;
 }
+
 #footer_izq>div>a:hover {
   text-decoration: line-through;
 }
+
 #footer_izq>div>h4 {
   font-family: var(--tipoTitulos);
 }
@@ -274,9 +282,11 @@ footer>div {
   border-image: initial;
   margin-top: 1em;
 }
-#div_priv{
-    padding-top: 0em !important;
+
+#div_priv {
+  padding-top: 0em !important;
 }
+
 #footer_dcha>form>input {
   color: var(--colorTipo);
   position: relative;
@@ -288,29 +298,33 @@ footer>div {
   border-color: var(--colorTipo);
   border-image: initial;
 }
-#footer_dcha>form{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+#footer_dcha>form {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 #footer_dcha>form>div {
   padding: 1em 0em;
 }
+
 #footer_dcha>h4 {
   font-family: 'IMPACT';
 }
+
 #mailForm {
   display: flex;
   flex-direction: column;
 }
-#footer_dcha>form>div>label{
+
+#footer_dcha>form>div>label {
   font-size: small;
 }
 
-#sendButton:hover{
+#sendButton:hover {
   background-color: var(--colorFondo);
   color: white;
 }
@@ -443,7 +457,7 @@ footer>div {
   #footer_izq>div {
     margin: 3em;
   }
-  
+
 }
 
 @media screen and (max-width: 400px) {
@@ -459,20 +473,24 @@ footer>div {
   #footer_dcha>form>div>input {
     width: 13em;
   }
+
   #privacidad {
     width: 0.8em !important;
     height: 0.8em !important;
     margin-left: 1em !important;
-}
-#footer_dcha> form > input  {
+  }
+
+  #footer_dcha>form>input {
     font-size: 0.7em;
-}
-#envio>div>p {
+  }
+
+  #envio>div>p {
     font-size: 0.7em;
-}
-.btn {
+  }
+
+  .btn {
     scale: 80%;
-}
+  }
 
 }
 
