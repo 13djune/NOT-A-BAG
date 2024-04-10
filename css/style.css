@@ -402,16 +402,16 @@ footer>div {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    margin-top: 18em;
 }
 #prox>div>h1{
   font-family: var(--tipoTitulos);
+  color: var(--colorTipo);
   font-size: 5em;
 }
 #prox>div>p{
   font-family: var(--tipoGeneral);
+  color: var(--colorTipo);
 }
 
 
