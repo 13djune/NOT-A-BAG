@@ -2,7 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background-color: var(--colorFondo);
+
 }
 
 @font-face {
@@ -29,9 +29,7 @@ header {
   position: sticky;
   top: 0;
 }
-#head-prod{
-  background-color: #ffffff !important;
-}
+
 .menu {
   position: fixed;
   top: 1em;
