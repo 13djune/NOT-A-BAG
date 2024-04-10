@@ -200,9 +200,9 @@ section>p {
 /*COUNTDOWN*/
 #demo{
   margin: 5em;
-  font-family: var(--tipoTitulos);
+  font-family: var(--tipoTitulos) !important;
   color: var(--colorTipo);
-  font-size: larger;
+  font-size: 6em;
 }
 /* ///////////////////////////// */
 /* FAVORITOS */
