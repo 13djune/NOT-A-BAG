@@ -30,7 +30,7 @@ header {
   top: 0;
 }
 #body-prod{
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .menu {
   position: fixed;
