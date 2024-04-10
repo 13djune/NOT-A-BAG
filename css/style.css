@@ -193,11 +193,18 @@ section>p {
   text-align: justify;
   margin: 1em;
   font-family: var(--tipoGeneral);
-  color: var(--colorClaro);
+  color: var(--colorTipo);
 }
 
 /* ///////////////////////////// */
-
+/*COUNTDOWN*/
+#demo{
+  margin: 5em;
+  font-family: var(--tipoGeneral);
+  color: var(--colorTipo);
+  font-size: larger;
+}
+/* ///////////////////////////// */
 /* FAVORITOS */
 
 #favoritos h1{
