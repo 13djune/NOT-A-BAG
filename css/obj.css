@@ -339,12 +339,12 @@ footer>div {
 #footer_dcha>form>div>input {
   width: 19em;
   height: 2em;
-  color: rgba(255, 255, 255, 0.816);
+  color: var(--colorFondo);
   border-radius: 2em;
   padding: 0.2em 0.2em 0.2em 0.5em;
   border-width: 1px;
   border-style: solid;
-  border-color: white;
+  border-color: var(--colorFondo);
   border-image: initial;
   margin-top: 1em;
 }
@@ -352,14 +352,14 @@ footer>div {
     padding-top: 0em !important;
 }
 #footer_dcha>form>input {
-  color: white;
+  color: var(--colorFondo);
   position: relative;
   cursor: pointer;
   border-radius: 2em;
   padding: 0.5em;
   border-width: 1px;
   border-style: solid;
-  border-color: white;
+  border-color: var(--colorTipo);
   border-image: initial;
 }
 #footer_dcha>form{
@@ -386,7 +386,7 @@ footer>div {
 }
 
 #sendButton:hover{
-  background-color: var(--colorTipo);
+  background-color: var(--colorFondo);
 }
 
 /* ///////////////// */
