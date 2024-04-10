@@ -352,7 +352,7 @@ footer>div {
     padding-top: 0em !important;
 }
 #footer_dcha>form>input {
-  color: var(--colorFondo);
+  color: var(--colorTipo);
   position: relative;
   cursor: pointer;
   border-radius: 2em;
@@ -375,7 +375,6 @@ footer>div {
 }
 #footer_dcha>h4 {
   font-family: 'IMPACT';
-  font-size: medium;
 }
 #mailForm {
   display: flex;
@@ -387,6 +386,7 @@ footer>div {
 
 #sendButton:hover{
   background-color: var(--colorFondo);
+  color: white;
 }
 
 /* ///////////////// */
