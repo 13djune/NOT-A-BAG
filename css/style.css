@@ -394,13 +394,21 @@ footer>div {
 #prox{
   height: 100vh;
   margin: 0;
-
+  width: 100vw;
 }
 #prox>div{
   display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #prox>div>h1{
   font-family: var(--tipoTitulos);
+  font-size: 5em;
 }
 #prox>div>p{
   font-family: var(--tipoGeneral);
