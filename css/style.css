@@ -200,7 +200,7 @@ section>p {
 /*COUNTDOWN*/
 #demo{
   margin: 5em;
-  font-family: var(--tipoGeneral);
+  font-family: var(--tipoTitulos);
   color: var(--colorTipo);
   font-size: larger;
 }
