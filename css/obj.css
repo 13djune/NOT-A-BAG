@@ -179,8 +179,8 @@ li>#objects {
 
 /* SECTIONS */
 section {
-  width: 90%;
-  max-width: 1500px;
+  width: 100vw;
+  max-width: 1800px;
   margin: auto;
   padding: 3em 0;
 }
