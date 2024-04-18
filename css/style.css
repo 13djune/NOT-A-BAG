@@ -307,6 +307,7 @@ section>p {
 footer {
   padding: 8em 0em;
   color: rgb(0, 0, 0);
+  display: flex;
 }
 
 footer>div {
