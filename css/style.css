@@ -305,22 +305,23 @@ section>p {
 }
 /* FOOTER */
 footer {
-  padding: 8em 0em;
+  padding-top: 8em;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
     align-items: center;
 }
 #logo_footer>img{
-width: 5em;
+width: 38em;
 }
 
-footer>div {
+#footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2em;
   margin-top: 2em;
+  width: 100vw;
 }
 
 #footer_izq {
