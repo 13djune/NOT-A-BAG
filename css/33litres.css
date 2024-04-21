@@ -11,6 +11,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Menlo';
+  src: url(../tipografias/Menlo-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Menlo-Italic';
+  src: url(../tipografias/Menlo-Bold-Italic.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
 
 :root {
   --colorTipo: black;
@@ -113,10 +125,12 @@ header {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  background-color: transparent !important;
 }
 
 .menu-listing li {
   display: inline-block;
+  background-color: transparent !important;
 }
 
 .menu-listing li a {
@@ -132,6 +146,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent !important;
 }
 
 .menu-listing li a:hover {
@@ -140,7 +155,7 @@ header {
 }
 
 .menu-prod li a:hover {
-  color: var(--colorFondo);
+  color: #e96e45;
   transition: 0.5s;
 }
 
@@ -164,7 +179,7 @@ header {
   display: none;
   position: absolute;
   top: 5em;
-
+  background-color: transparent !important;
   font-size: larger;
 }
 
@@ -229,6 +244,141 @@ section>p {
   width: 55vw;}
 
 /* ///////////////////////////// */
+/* TEXTO */
+#textito>div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 34vw;
+  position: absolute;
+  right: 0;
+  margin: 1em 5em;
+}
+#textito>div>p{
+  display: flex;
+  font-family: 'Menlo';
+  font-size: small;
+  color: #e96e45;
+  }
+/* ///////////////////////////// */
+/* TEXTO2 */
+.img{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 34vw;
+  position: absolute;
+  right: 0;
+  margin: 1em 5em;
+}
+#text2{
+  display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 67vw;
+    margin: 0em 5em;
+    justify-content: space-between;
+}
+#text3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40vw;
+  margin: 0em 5em;
+}
+#texto2>div>p{
+  display: flex;
+  font-family: 'Menlo';
+  font-size: small;
+  color: #e96e45;
+  margin-bottom: 0;
+  }
+  #texto2>h4 {
+    position: absolute;
+    right: 13em;
+    width: 27vw;
+    font-family: 'Menlo';
+    font-size: xx-large;
+    color: #e96e45;
+    background: transparent;
+    margin-top: 4em;
+}
+
+#texto2>div>img {
+  width: 42vw;
+}
+.img2{
+  display: flex;
+  flex-direction: row;
+  margin: 20em 5em;
+  margin-bottom: 5em;
+}
+.img2>img{
+  width: 35vw;
+}
+#text4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    position: relative;
+    background: transparent;
+}
+
+.img2>div>p{
+  font-family: 'Menlo-Italic';
+  color: #e96e45;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  left: 22em;
+  flex-direction: column;
+  margin-top: 2em;
+
+}
+/* ///////////////////////////// */
+/* DISCO */
+#disco{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+#disco>div{
+  background: transparent !important;
+  }
+#disco>div>img{
+width: 75vw;
+background: transparent !important;
+margin-top: 4em;
+}
+/* ///////////////////////////// */
+/* CHIRINDISCO */
+#carusel{
+  display: flex;
+    padding: 0;
+    flex-direction: column;
+    color: #e96e45;
+    font-family: 'Menlo';
+    align-items: center;
+}
+#text5{
+  width: 38vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.img3>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.img3>a>img{
+  width: 40vw;
+  background: transparent;
+}
+
+
+/* ///////////////////////////// */
 /* FOOTER */
 footer {
   padding-top: 8em;
@@ -236,6 +386,10 @@ footer {
   display: flex;
   flex-direction: column;
     align-items: center;
+    color: #e96e45;
+    font-family: 'Menlo';
+    padding-bottom: 3em;
+
 }
 #logo_footer>img{
 width: 38em;
@@ -249,112 +403,8 @@ width: 38em;
   margin-top: 2em;
   width: 100vw;
 }
-#footer_izq {
-  display: flex;
-  flex-direction: row;
-}
 
-#footer_izq>div {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3em;
-}
 
-#footer_izq>div>p {
-  font-family: var(--tipoGeneral);
-  font-size: small;
-  padding: 0.5em 0em;
-}
-
-#footer_izq>div>a {
-  font-family: var(--tipoGeneral);
-  font-size: small;
-  padding: 0.5em 0em;
-  text-decoration: none;
-}
-
-#footer_izq>div>a:hover {
-  text-decoration: line-through;
-}
-
-#footer_izq>div>h4 {
-  font-family: var(--tipoTitulos);
-}
-
-#footer_dcha {
-  display: flex;
-  flex-direction: column;
-  padding-right: 1em;
-  font-family: var(--tipoGeneral);
-}
-
-#privacidad {
-  color: transparent !important;
-  border-style: solid !important;
-  border-color: white !important;
-  width: 1em !important;
-  height: 1em !important;
-  margin-left: 1.5em !important;
-}
-
-#footer_dcha>form>div>input {
-  width: 19em;
-  height: 2em;
-  color: var(--colorTipo);
-  border-radius: 2em;
-  padding: 0.2em 0.2em 0.2em 0.5em;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--colorTipo);
-  border-image: initial;
-  margin-top: 1em;
-}
-
-#div_priv {
-  padding-top: 0em !important;
-}
-
-#footer_dcha>form>input {
-  color: var(--colorTipo);
-  position: relative;
-  cursor: pointer;
-  border-radius: 2em;
-  padding: 0.5em;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--colorTipo);
-  border-image: initial;
-}
-
-#footer_dcha>form {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-#footer_dcha>form>div {
-  padding: 1em 0em;
-}
-
-#footer_dcha>h4 {
-  font-family: 'IMPACT';
-}
-
-#mailForm {
-  display: flex;
-  flex-direction: column;
-}
-
-#footer_dcha>form>div>label {
-  font-size: small;
-}
-
-#sendButton:hover {
-  background-color: var(--colorFondo);
-  color: white;
-}
 
 /* ///////////////// */
 
