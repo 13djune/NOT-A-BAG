@@ -245,6 +245,9 @@ section>p {
 
 /* ///////////////////////////// */
 /* TEXTO */
+#textito {
+  height: 20em;
+}
 #textito>div{
   display: flex;
   flex-direction: column;
