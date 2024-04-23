@@ -71,7 +71,7 @@ $(".menu").click(function() {
   });
 
   document.addEventListener("DOMContentLoaded", function() {
-    // Carrusel 1
+      // Carrusel 1
     const slider1 = document.querySelector("#textito .items");
     const slides1 = document.querySelectorAll("#textito .item");
     const button1 = document.querySelectorAll("#textito .button");
@@ -194,4 +194,18 @@ $(".menu").click(function() {
       slides3[next3].classList.add("next");
     }
   });
-  
+  function showOverlay(image) {
+    // Ocultar la imagen original
+    image.style.display = "none";
+    // Obtener la imagen de la capa de superposición
+    var overlayImage = image.nextElementSibling;
+    // Mostrar la imagen de la capa de superposición
+    overlayImage.style.display = "block";
+  }
+  function hideOverlay(overlayImage) {
+    // Ocultar la imagen de la capa de superposición
+    overlayImage.style.display = "none";
+    // Mostrar la imagen original
+    var originalImage = overlayImage.previousElementSibling;
+    originalImage.style.display = "block";
+  }

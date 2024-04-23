@@ -208,100 +208,36 @@ section>p {
 }
 
 /* ///////////////////////////// */
-/* FAVORITOS */
 
-#favoritos h1 {
-  padding: 2em 2em 0.3em;
-  color: var(--colorTipo);
-}
-
-#favoritos h4 {
-  font-family: var(--tipoGeneral);
-  color: var(--colorTipo);
-  text-align: center;
-  font-size: calc(1.1rem + .3vw);
-}
-
-#favoritos .rounded {
-  width: 10em;
-}
-
-.favart {
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  border: var(--colorTipo);
-  border-style: solid;
-  border-radius: 50px;
-  margin: 3em 1.5em;
-  justify-content: space-between;
-  width: 40%;
-}
-
-.listfav {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.art_1 {
-  width: 60%;
-  padding: 1.5em;
+/* FOTOS */
+#fotos{
   display: flex;
   flex-direction: column;
-}
-
-.art_2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.art_3 {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  height: 80vh;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#favoritos .btn {
-  color: var(--colorTipo);
-  border-radius: 2em;
-  padding: 0.2em 0.2em 0.2em 0.5em;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--colorTipo);
-  border-image: initial;
-  margin-top: 1em;
-  background-color: transparent !important;
+.image,
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 70vw;
+  height: 70vw;
+  background: transparent;
 }
 
-#favoritos h4 {
-  color: var(--colorTipo);
-}
-
-#favoritos h2,
-#favoritos h5,
-#favoritos p,
-#favoritos .fa-regular {
-  color: var(--colorTipo);
-}
-
-#favoritos .fa-regular:hover {
-  scale: 1.1;
-}
-
-.butCalc {
-  font-family: var(--tipoGeneral);
-  font-size: calc(1.325rem + .9vw);
-  color: var(--colorTipo);
-  border: none;
-}
-#favoritos .btn:hover {
-  color: white;
-
-  border-color: white;
- 
-  background-color: var(--colorTipo) !important;
+.hidden {
+  display: none;
 }
 /* FOOTER */
 footer {
@@ -434,7 +370,7 @@ width: 38em;
 /* ///////////////// */
 /*PROX*/
 #prox {
-  height: 100vh;
+  height: 75vh;
   margin: 0;
   width: 100vw;
 }
