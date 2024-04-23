@@ -330,6 +330,14 @@ form>input{
     flex-direction: column;
     padding: 1em;
 }
+.form-group>textarea{
+
+  display: flex;
+     flex-direction: column;
+     padding: 1em;
+     font-family: 'IMPACT';
+     border: black solid 1px !important;
+ }
 /* ///////////////////////////// */
 /* FOOTER */
 footer {
