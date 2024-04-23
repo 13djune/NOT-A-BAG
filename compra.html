@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background-color: #ffffff;">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/bag.png" style="height: 100%; width: auto;">
+    <title>WISHLIST</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
+    <link href="css/obj.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="menu">
+            <span></span>
+        </div>
+        <nav class="navbar-menu">
+            <ul class="menu-listing menu-prod">
+                <li><a id="01" href="#">◄
+                        <div class="info">
+                            PAST
+                        </div>
+                    </a></li>
+                <li><a id="02" href="index.html">—<div class="info">
+                            PRESENT
+                        </div></a></li>
+                <li><a id="03" href="future.html">►<div class="info">
+                            FUTURE
+                        </div></a></li>
+                <li><a id="objects" href="projects.html">+<div class="info">
+                            PROJECTS
+                        </div></a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <section id="wishlist">
+        <div>
+
+            <h4>WISHLIST</h4>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="Write email..." required><br><br>
+    
+            <p>
+    25 bags left
+            </p>
+            <p id="demo"></p>
+        </div>
+
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("May 9, 2024 00:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </section>
+
+    <section id="form">
+        <img src="imgs/IMG_6851.png">
+        <form id="registration-form" action="compra2.html"  method="GET">
+            <label for="nombre"></label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="First name" required><br><br>
+
+            <label for="apellidos"></label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Last name" required><br><br>
+
+            <label for="direccion"></label><br>
+            <input type="text" id="addres" name="addres" required placeholder="Addres"><br><br>
+
+            <label for="codigo-postal"></label><br>
+            <input type="text" id="codigo-postal" name="Post code" placeholder="Post code" required><br><br>
+            <div id="ciudad-pais">
+                <div>
+
+                    <label for="ciudad"></label><br>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="City" required><br><br>
+                </div>
+                <div>
+
+                    <label for="pais"></label><br>
+                    <input type="text" id="pais" name="pais" placeholder="Country" required><br><br>
+                </div>
+            </div>
+            <button class="btn enter" type="submit">ENTER</button>
+            <p style="padding-top: 1em;">Fill in all the gaps in order to purchase*</p>
+        </form>
+
+        <script>
+            document.getElementById("registration-form").addEventListener("submit", function (event) {
+                event.preventDefault(); // Evitar que el formulario se envíe
+                // Aquí puedes agregar código para enviar los datos del formulario a un servidor
+                console.log("Formulario enviado!");
+            });
+        </script>
+    </section>
+
+</body>
+<footer>
+    <div id="footer">
+        <div id="footer_izq">
+            <div>
+                <h4>INFORMATION</h4>
+                <p>
+                    Shipping and Returns</p>
+                <p>Terms and conditions</p>
+                <p>Privacy policy</p>
+                <p>Sustainability</p>
+                <p>Frequently Asked Questions</p>
+                <p>Accessibility</p>
+
+            </div>
+            <div>
+                <h4>SOCIAL</h4>
+                <a href="mailto: Notabagcontact@gmail.com">
+                    <p style="color: var(--colorTipo);">Email Us</p>
+                </a>
+                <a href="https://www.instagram.com/______notabag?igsh=MTZnNjdmaGlvemV5Yg%3D%3D&utm_source=qr">
+                    <p style="color: var(--colorTipo);">Instagram</p>
+                </a>
+                <p>TikTok</p>
+                <p>Pinterest</p>
+                <p>Facebook</p>
+                <a href="story.html">
+                    <p style="color: var(--colorTipo);">About Us</p>
+                </a>
+            </div>
+
+        </div>
+        <div id="footer_dcha">
+            <h4>THIS IS NOT A NEWSLETTER</h4>
+            <form>
+                <div id="mailForm">
+                    <label for="email">Enter your email address:</label>
+                    <input type="email" id="email" value="">
+                </div>
+                <div id="div_priv">
+                    <input type="checkbox" id="privacidad" name="privacidad" value="Si">
+                    <label for="privacidad">By subscribing, I agree to the Privacy Policy.</label>
+
+                </div>
+                <input id="sendButton" type="button" value="Subscribe to our newsletter">
+            </form>
+
+        </div>
+    </div>
+    <div id="logo_footer" data-aos="zoom-in-up">
+        <img src="imgs/logo_n.png" alt="">
+    </div>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+
+</html>

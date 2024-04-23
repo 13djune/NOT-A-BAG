@@ -209,3 +209,7 @@ $(".menu").click(function() {
     var originalImage = overlayImage.previousElementSibling;
     originalImage.style.display = "block";
   }
+  document.getElementById("registration-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evitar que se envíe el formulario de forma predeterminada
+    window.location.href = "compra2.html"; // Redirigir a la nueva página
+});

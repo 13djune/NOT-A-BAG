@@ -394,8 +394,35 @@ width: 38em;
   font-family: var(--tipoGeneral);
   color: var(--colorTipo);
 }
-
-
+/*Bolso*/
+#bolso{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+#bolso>div>a {
+  display: contents;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+}
+#bolso>div>a :hover{
+  cursor: pointer;
+}
+#bolso>div>a>img {
+  width: 100vw;
+  background: transparent !important;
+  z-index: 1;
+  position: relative;
+}
+#bolso>div>img {
+  width: 100vw;
+  background: transparent !important;
+}
+#texto_bolso{
+  position: absolute;
+  left: 0;
+}
 
 
 @media screen and (max-width: 600px) {

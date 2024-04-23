@@ -220,6 +220,117 @@ section>p {
 
 
 /* ///////////////////////////// */
+/* WISHLIST */
+#wishlist{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: 'IMPACT';
+  padding-bottom: 0;
+}
+#wishlist>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10em;
+  margin-bottom: 0;
+}
+#wishlist>div>input{
+  width: 25em;
+  height: 3em;
+  display: flex;
+  font-family: 'IMPACT';
+  flex-direction: column;
+      align-items: center;
+      padding: 1em;
+}
+#form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+#form>img{
+  width: 65vw;
+  position: relative;
+  top: -15em;
+  background: transparent;
+}
+form{
+  display: flex;
+font-family: 'IMPACT';
+flex-direction: column;
+    align-items: center;
+}
+form>input{
+  width: 20em;
+  padding: 0.5em;
+}
+#ciudad-pais {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+#ciudad-pais>div>input {
+  padding: 0.5em;
+  width: 9.5em;
+}
+
+#ciudad-pais > div {
+  flex: 1;
+
+}
+.enter{
+  border: black solid 1px !important;
+  border-radius: 2em !important;
+  width: 8em;
+  height: 3em;
+}
+
+.enter:hover {
+  background-color: var(--colorFondo);
+  color: white;
+  scale: 110%;
+}
+#form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+#payment-form{
+  display: flex;
+  margin: 10em;
+  font-family: 'IMPACT';
+  flex-direction: column;
+  align-items: center;
+}
+#payment-form>div>input{
+  width: 20em;
+  padding: 0.5em;
+}
+.form-group2> .form-group>input{
+  width: 9em;
+  padding: 0.5em;
+}
+.form-group2{
+
+  display: flex;
+     flex-direction: row !important;
+     padding: 1em;
+ }
+ .form-group{
+
+ display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+/* ///////////////////////////// */
 /* FOOTER */
 footer {
   padding-top: 8em;
