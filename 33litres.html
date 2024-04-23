@@ -71,7 +71,11 @@
     <section id="textito">
         <div>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, harum? Facere ut cum doloribus saepe, accusantium unde dicta laborum tenetur voluptas, maiores veniam, quasi itaque perspiciatis nobis expedita! Voluptatum, vero?
+                33 Litres was born in 2021 through a lot of thoughts as the place where everything around is an art project.
+                <br>
+                <br>
+                In 2024, it transformed into what we called the 3s: "the Studio" for our private exploration and development within the realm of all forms of architecture,
+                "the Society" for creative nomads, those who feel that everything around them is an art project too, and "the Sessions" just to have some extra-fun.        
             </p>
         </div>
     </section>
@@ -104,14 +108,88 @@ in SEGOVIA and it was a banger!! The two masterminds behind the proyect are:    
             <img src="imgs/505a2260-652a-4325-b0bc-90a1493904e1.jpeg" alt="">
             <div>
 
-                <p>"asjdbakjlsbdaklsbdkasb cdaksbdkasbdkasbdhasbdkahsb ckabsiygcyqwogashjashbdahjsbxhabscx"</p>
-                <p style="margin: 8em 10em;">"asjdbakjlsbdaklsbdkasb cdaksbdkasbdkasbdhasbdkahsb ckabsiygcyqwogashjashbdahjsbxhabscx"</p>
+                <p>"We love music and architecture,
+                    so we want to create experiences that merge both of them. We believe that a good combination of music and a cool space can develop into something fun.
+                    </p>
+                <p style="margin: 10em 11em;">We love music and architecture,
+                    so we want to create experiences that merge both of them. We believe that a good combination of music and a cool space can develop into something fun.
+                    
+                    We are students and we are young so why not combine those things that are always on our minds: design/architecture and going out!".</p>
             </div>
         </div>
         
     </section>
     <section id="carusel">
         <h2>CHIRINDISCO 11.04.24 BOOK</h2>
+        <div class="items">
+            <div class="item active">
+                <img src="imgs/IMG_6927.jpeg">
+            </div>
+            <div class=" item next">
+                <img src="imgs/IMG_6925.jpeg">
+            </div>
+            <div class="item">
+                <img src="imgs/IMG_6921.jpeg">
+            </div>
+            <div class="item">
+                <img src="imgs/IMG_6922.jpeg">
+            </div>
+            <div class="item">
+                <img src="imgs/IMG_6928.jpeg">
+            </div>
+            <div class="item">
+        <img src="imgs/IMG_6926.jpeg">
+    </div>
+            <div class="item prev">
+                <img src="imgs/IMG_6928.jpeg">
+            </div>
+            <div class="button-container">
+                <div class="button"><i class="fas fa-angle-left"></i></div>
+                <div class="button"><i class="fas fa-angle-right"></i></div>
+            </div>
+          </div>
+          <script>
+            const slider = document.querySelector(".items");
+            const slides = document.querySelectorAll(".item");
+            const button = document.querySelectorAll(".button");
+        
+            let current = 0;
+            let prev = 4;
+            let next = 1;
+        
+            for (let i = 0; i < button.length; i++) {
+              button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+            }
+        
+            const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+        
+            const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+        
+            const gotoNum = number => {
+              current = number;
+              prev = current - 1;
+              next = current + 1;
+        
+              for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                slides[i].classList.remove("prev");
+                slides[i].classList.remove("next");
+              }
+        
+              if (next == 5) {
+                next = 0;
+              }
+        
+              if (prev == -1) {
+                prev = 4;
+              }
+        
+              slides[current].classList.add("active");
+              slides[prev].classList.add("prev");
+              slides[next].classList.add("next");
+            }
+          </script>
+
         <div id="text5">
             <p>
        SOON they will be launching in Madrid on </p>
@@ -122,7 +200,7 @@ in SEGOVIA and it was a banger!! The two masterminds behind the proyect are:    
        Click below for more info </p>
         </div>
         <div class="animate__animated animate__pulse animate__infinite img3">
-            <a>
+            <a href="https://www.fourvenues.com/studio-33/events/33-liters-sessions--11-04-2024-I9P6">
                 <img src="imgs/IMG_6815.png" alt="">
             </a>
         </div>
