@@ -433,6 +433,13 @@ width: 38em;
   width: 34vw !important;
   bottom: 10em;
 }
+#click2 {
+  position: absolute;
+  left: 26em;
+  width: 34vw !important;
+  bottom: 10em;
+  background: transparent !important;
+}
 
 
 @media screen and (max-width: 600px) {
