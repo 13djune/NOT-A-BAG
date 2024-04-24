@@ -432,6 +432,7 @@ width: 38em;
   right: 0;
   width: 34vw !important;
   bottom: 10em;
+  background: transparent !important;
 }
 #click2 {
   position: absolute;
