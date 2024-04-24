@@ -213,3 +213,21 @@ $(".menu").click(function() {
     event.preventDefault(); // Evitar que se envíe el formulario de forma predeterminada
     window.location.href = "compra2.html"; // Redirigir a la nueva página
 });
+
+const popup = document.getElementById('popup');
+const popupBtn = document.getElementById('popupBtn');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+popupBtn.onclick = function() {
+    popup.style.display = 'block';
+}
+
+closeBtn.onclick = function() {
+    popup.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+}
