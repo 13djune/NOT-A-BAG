@@ -1,22 +1,4 @@
 
-const popup = document.getElementById('popup');
-const popupBtn = document.getElementById('popupBtn');
-const closeBtn = document.getElementsByClassName('close')[0];
-
-popupBtn.onclick = function() {
-    popup.style.display = 'block';
-}
-
-closeBtn.onclick = function() {
-    popup.style.display = 'none';
-}
-
-window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = 'none';
-    }
-}
-
 
 
 
@@ -149,6 +131,8 @@ $(".menu").click(function() {
       slides3[prev3].classList.add("prev");
       slides3[next3].classList.add("next");
     }
+
+
   });
   function showOverlay(image) {
     // Ocultar la imagen original
@@ -165,8 +149,24 @@ $(".menu").click(function() {
     var originalImage = overlayImage.previousElementSibling;
     originalImage.style.display = "block";
   }
-  document.getElementById("registration-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evitar que se envíe el formulario de forma predeterminada
-    window.location.href = "compra2.html"; // Redirigir a la nueva página
+  document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('popup');
+    const popupBtn = document.getElementById('popupBtn');
+    const closeBtn = document.querySelector('.close');
+
+    popupBtn.addEventListener('click', function() {
+        popup.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
 });
 
+ 

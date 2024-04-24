@@ -99,7 +99,7 @@
 
     <section id="form">
         <img src="imgs/IMG_6851.png">
-        <form id="registration-form" action="compra2.html"  method="GET">
+        <form id="registration-form"  method="GET">
             <label for="nombre"></label><br>
             <input type="text" id="nombre" name="nombre" placeholder="First name" ><br><br>
 
@@ -126,14 +126,16 @@
             <button class="btn enter" type="submit">ENTER</button>
             <p style="padding-top: 1em;">Fill in all the gaps in order to purchase*</p>
         </form>
-
         <script>
-            document.getElementById("registration-form").addEventListener("submit", function (event) {
-                event.preventDefault(); // Evitar que el formulario se envíe
-                // Aquí puedes agregar código para enviar los datos del formulario a un servidor
-                console.log("Formulario enviado!");
+            document.addEventListener("DOMContentLoaded", function() {
+                const form = document.getElementById("registration-form");
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault(); // Evitar que el formulario se envíe por defecto
+                    window.location.href = "compra2.html"; // Redirigir a la página deseada
+                });
             });
         </script>
+      
     </section>
 
 </body>
