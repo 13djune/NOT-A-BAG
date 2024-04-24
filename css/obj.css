@@ -342,7 +342,7 @@ form>input{
 .popup {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 99999;
   left: 0;
   top: 0;
   width: 100%;
@@ -353,10 +353,26 @@ form>input{
 
 .popup-content {
   background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+    margin: 10% auto;
+    padding: 3em;
+    border: 1px solid #888;
+    border-radius: 4em;
+    width: 80%;
+    height: 60%;
+
+}
+.popup-content>p {
+  font-family: 'IMPACT';
+  font-size: large;
+  padding: 1em;
+  text-align: center;
+}
+.popup-content>img {
+ width: 27vw;
+ background: transparent !important;
+ position: absolute;
+ left: 37%;
+ top: 50%;
 }
 
 .close {
