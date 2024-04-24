@@ -113,10 +113,12 @@ header {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  background-color: transparent !important;
 }
 
 .menu-listing li {
   display: inline-block;
+  background-color: transparent !important;
 }
 
 .menu-listing li a {
@@ -132,6 +134,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent !important;
 }
 
 .menu-listing li a:hover {
@@ -166,6 +169,7 @@ header {
   top: 5em;
 
   font-size: larger;
+  background-color: transparent !important;
 }
 
 li>#objects {
@@ -422,6 +426,12 @@ width: 38em;
 #texto_bolso{
   position: absolute;
   left: 0;
+}
+#click {
+  position: absolute;
+  right: 0;
+  width: 34vw !important;
+  bottom: 10em;
 }
 
 

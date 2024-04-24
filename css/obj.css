@@ -113,10 +113,12 @@ header {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  background-color: transparent !important;
 }
 
 .menu-listing li {
   display: inline-block;
+  background-color: transparent !important;
 }
 
 .menu-listing li a {
@@ -132,6 +134,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent !important;
 }
 
 .menu-listing li a:hover {
@@ -164,7 +167,7 @@ header {
   display: none;
   position: absolute;
   top: 5em;
-
+  background-color: transparent !important;
   font-size: larger;
 }
 
