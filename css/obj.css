@@ -384,7 +384,7 @@ form>input{
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #cd212a;
   text-decoration: none;
   cursor: pointer;
 }
